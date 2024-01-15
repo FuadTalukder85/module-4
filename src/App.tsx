@@ -1,10 +1,13 @@
-import MainLayout from "./components/layout/MainLayout";
+import Button from "./components/ui/Button";
+import Container from "./components/ui/Container";
 
 function App() {
   return (
-    <>
-      <MainLayout></MainLayout>
-    </>
+    <Container>
+      <div className="h-screen w-full flex justify-center items-center">
+        <Button className="" outline={true}></Button>
+      </div>
+    </Container>
   );
 }
 
