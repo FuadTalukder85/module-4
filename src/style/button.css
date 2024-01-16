@@ -1,13 +1,23 @@
 @layer components {
-  .btn {
+  .btn-solid {
     @apply px-3 py-2;
+    @apply font-semibold text-white rounded-md;
+    @apply bg-purple-400 hover:bg-purple-500;
+    @apply transition-all;
+  }
 
-    @apply rounded-md;
+  .btn-outline {
+    @apply px-3 py-2;
+    @apply font-semibold text-purple-500 rounded-md;
+    @apply bg-purple-400 bg-opacity-10 hover:bg-opacity-20 focus:bg-opacity-20;
+    @apply border border-purple-400;
+    @apply transition-all;
   }
-  .btn-primary {
-    @apply bg-purple-400;
-  }
-  .btn-danger {
-    @apply bg-red-400;
+
+  .btn-ghost {
+    @apply px-3 py-2;
+    @apply font-semibold text-purple-500 rounded-md;
+    @apply bg-purple-400 bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20;
+    @apply transition-all;
   }
 }
